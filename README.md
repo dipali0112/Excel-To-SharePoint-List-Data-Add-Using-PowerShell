@@ -34,7 +34,7 @@ Save the script as `ExcelToSharePoint.ps1` and execute it using:
 .\ExcelToSharePoint.ps1
 ```
 
-## Usage 🫠
+## Usage 
 1. Update the **Excel file path**, **SharePoint List name**, and **lookup field names** in the script.
 2. Run the script in PowerShell **after logging into SharePoint Online**.
 3. Data from Excel will be automatically synchronized to the SharePoint List.
@@ -85,15 +85,6 @@ foreach ($Row in $ExcelData) {
 # Disconnect from SharePoint
 Disconnect-PnPOnline
 ```
-
-## Troubleshooting 🔧
-- **Module Not Found**: Ensure `PnP.PowerShell` and `ImportExcel` modules are installed.
-- **Authentication Issues**: Use `-UseWebLogin` when connecting to SharePoint.
-- **Incorrect Lookup Values**: Ensure lookup column names match the SharePoint list field names exactly.
-- **Date Format Errors**: Modify `ParseExact` date format to match your Excel data.
-
-## Contributing 🤝
-Feel free to contribute by submitting issues or pull requests on GitHub.
 
 ## GitHub Tags 🔍
 - PowerShell
